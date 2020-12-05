@@ -1,0 +1,48 @@
+@import "./globals.scss";
+
+.artist_image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.artist_img_wrapper {
+  width: 90%;
+  height: 0;
+  padding-bottom: 61.8%;
+  justify-content: center;
+  text-align: center;
+}
+
+.main__header__container {
+  text-align: left;
+  width: 80%;
+  padding-left: 0;
+  letter-spacing: 3px;
+}
+
+.main__header {
+  font-family: "4fiction";
+  font-size: 38px;
+}
+
+.info__list__container {
+  width: 90%;
+  ul {
+    padding: 0 1rem;
+  }
+  li {
+    list-style-type: none;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .artist_image_wrapper {
+    width: 80%;
+    text-align: center;
+  }
+  .info__list__container {
+    width: 80%;
+  }
+}

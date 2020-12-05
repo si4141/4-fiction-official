@@ -1,0 +1,109 @@
+@import "./globals.scss";
+
+.header__box {
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  width: 100%;
+  height: $header-height;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navigation__menu {
+  opacity: 0;
+  background-color: #fff;
+  height: 100%;
+  z-index: 100;
+  text-align: right;
+  li {
+    list-style-type: none;
+  }
+  a {
+    font-weight: bold;
+  }
+}
+
+.logo {
+  font-family: "4fiction";
+  font-size: 51px;
+  margin: 1rem 0;
+  letter-spacing: 3px;
+}
+
+.icon {
+  height: 2rem;
+  color: grey;
+}
+
+$btn-width: 30px;
+.toggle__btn {
+  display: block;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: $btn-width;
+  height: $btn-width;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 3;
+  span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: $btn-width;
+    height: 2px;
+    background-color: #333;
+    border-radius: 4px;
+    transition: all 0.5s;
+  }
+  @for $i from 1 through 4 {
+    span:nth-child(#{$i}) {
+      top: #{7 * $i}px;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .header__box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    header {
+      margin-left: 1rem;
+    }
+  }
+  .navigation__menu {
+    opacity: 1;
+    margin: 0 1rem 0 auto;
+    nav {
+      display: flex;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    li {
+      a {
+        padding: 0 1rem;
+      }
+    }
+    .icon_wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      margin-left: 1rem;
+      svg {
+        padding: 0 2px;
+      }
+    }
+    display: flex;
+  }
+  .toggle__btn {
+    display: none;
+  }
+}

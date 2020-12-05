@@ -1,16 +1,26 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
+import styles from '../styles/layout.module.scss'
+import SiteHeader from './siteHeader'
 
 export default function Layout(props) {
   const {title, children} = props;
   const siteTitle = 'ヨンフィクション Official Web Site'
 
   return (
-    <div>
+    <>
       <Head>
         <title>{title ? `${title} | ${siteTitle}` : siteTitle}</title>
+        <script src="https://kit.fontawesome.com/69cad91b52.js" crossOrigin="anonymous"></script>
       </Head>
-    </div>
+      <div className={styles.container}>
+        <SiteHeader />
+        <main className={styles.main}>
+          {children}
+        </main>
+        <footer className={styles.footer}>
+          <small>© 2020 ヨンフィクション</small>   
+        </footer>
+      </div>
+    </>
   )
-  // return <div className={styles.container}>{children}</div>
 }
