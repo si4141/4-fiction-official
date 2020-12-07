@@ -22,7 +22,7 @@ export default function SiteHeader() {
 
         <div 
           className={!isMenuOpen ? styles.navigation__menu : styles.navigation__menu__open}
-          onClick={() => setMenuState(!isMenuOpen)}
+          onClick={() => setMenuState(false)}
         >
           {isMenuOpen && 
             <Link href="/">

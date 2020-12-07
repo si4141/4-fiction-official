@@ -10,6 +10,7 @@ export default function Layout(props) {
     <>
       <Head>
         <title>{title ? `${title} | ${siteTitle}` : siteTitle}</title>
+        <meta name="description" content="ロックバンド ヨンフィクションの公式webサイトです。"></meta>
         <script src="https://kit.fontawesome.com/69cad91b52.js" crossOrigin="anonymous"></script>
       </Head>
       <div className={styles.container}>
