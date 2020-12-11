@@ -9,7 +9,7 @@ export default function Biography() {
             <h2 className={styles.main__header}>Biography</h2>
           </div>
           <div className={styles.artist_img_wrapper}>
-            <img src="/top_tokyo_station.jpg" alt="artist_img" className={styles.artist_image} />
+            <img src="/top_tokyo_station.jpg" alt="artist_img" className={styles.artist_image} height={500} width={800} decoding="async" />
           </div>
           <div className={styles.member_list}>
             <ul>
