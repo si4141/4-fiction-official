@@ -1,10 +1,10 @@
-import Layout from '../../components/layout';
 import styles from '../../styles/biography.module.scss';
 
+const Title: string = 'Biography';
 
 export default function Biography() {
     return (
-        <Layout title='Biography'>
+        <>
           <div className={styles.main__header__container}>
             <h2 className={styles.main__header}>Biography</h2>
           </div>
@@ -26,6 +26,10 @@ export default function Biography() {
             <p>2020年7月結成。</p>
             <p>現在、ミニアルバムをレコーディング中。</p>
           </div>
-        </Layout>
+        </>
     )
+}
+
+export const getServerSideProps = async () => {
+  return {props: {title: Title}}
 }

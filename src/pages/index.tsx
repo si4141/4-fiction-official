@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <Layout>
+    <>
         <div className={styles.artist_image_wrapper}>
           <img src="/top_tokyo_station.jpg" alt="artist image" className={styles.artist_image}></img>
         </div>
@@ -28,6 +28,6 @@ export default function Home() {
             <li>ライブ情報はありません。</li>
           </ul>
         </div>
-    </Layout>
+    </>
   )
 }
