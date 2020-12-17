@@ -1,0 +1,9 @@
+@import "../globals.scss";
+@import "./Home.module.scss";
+
+.main__header__container {
+  width: 90%;
+  h2 {
+    cursor: default;
+  }
+}

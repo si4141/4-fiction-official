@@ -1,4 +1,4 @@
-import styles from '../../styles/biography.module.scss';
+import styles from '../../styles/pages/biography.module.scss';
 
 const Title: string = 'Biography';
 

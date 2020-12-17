@@ -1,5 +1,4 @@
-@import "./globals.scss";
-@import "./Home.module.scss";
+@import "./children.common.module.scss";
 
 .member_list {
   text-align: right;
@@ -12,8 +11,4 @@
 .short_description {
   width: 90%;
   line-height: 0.5rem;
-}
-
-.main__header__container {
-  width: 90%;
 }
